@@ -1,4 +1,4 @@
 module.exports = {
   // Konfiguracija statiniam eksportui
-  exportTrailingSlash: true,  // Sukuria URL su "/" pabaiga
+  TrailingSlash: true,  // Sukuria URL su "/" pabaiga
 };

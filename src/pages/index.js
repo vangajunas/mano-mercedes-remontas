@@ -16,7 +16,13 @@ export default function MercedesSuspensionLanding() {
         />
         <h1 className="text-4xl font-bold mb-4 relative">Mercedes - Benz Važiuoklės remontas</h1>
         <p className="text-xl mb-6 relative">Pakabos remontas Air Matic® | Pneumatinės/orinės važiuoklės remontas</p>
-        <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-2xl text-lg relative">Registruotis diagnostikai</Button>
+        <Button 
+          className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-2xl text-lg relative"
+          onClick={() => window.location.href = 'tel:+370 68750288'} // Nurodykite telefono numerį su + ir šalies kodu
+        >         
+          Registruotis diagnostikai
+        </Button>
+
       </section>
 
       {/* About Us */}
