@@ -8,21 +8,21 @@ export default function MercedesSuspensionLanding() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-black to-gray-800 text-white text-center py-16 px-4 relative">
         <Image 
-          src="/images/mercedes-service.jpg" // Nurodykite kelią į nuotrauką
+          src="/images/workshop.jpg" // Nurodykite kelią į nuotrauką
           alt="Mercedes Benz" 
-          layout="fill" // Nuotrauka užims tėvinio elemento plotį ir aukštį
-          objectFit="cover" // Nuotrauka užpildys visą tėvinį elementą, išlaikant proporcijas
+          width={1920} // Nustatykite norimą nuotraukos plotį
+          height={1080} // Nustatykite norimą nuotraukos aukštį
+          style={{ objectFit: 'cover' }} // Nustatykite objectFit tiesiogiai
           className="absolute inset-0 w-full h-full opacity-20" // Apibrėžti stilius
         />
         <h1 className="text-4xl font-bold mb-4 relative">Mercedes - Benz Važiuoklės remontas</h1>
         <p className="text-xl mb-6 relative">Pakabos remontas Air Matic® | Pneumatinės/orinės važiuoklės remontas</p>
         <Button 
           className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-2xl text-lg relative"
-          onClick={() => window.location.href = 'tel:+370 68750288'} // Nurodykite telefono numerį su + ir šalies kodu
+          onClick={() => window.location.href = 'tel:+37068750288'} // Nurodykite telefono numerį su + ir šalies kodu
         >         
           Registruotis diagnostikai
         </Button>
-
       </section>
 
       {/* About Us */}
@@ -54,8 +54,7 @@ export default function MercedesSuspensionLanding() {
                 alt={service.name}
                 width={400} // Nustatykite plotį
                 height={240} // Nustatykite aukštį
-                //className="w-full h-48 object-cover rounded-t-2xl"
-				className="mx-auto rounded-t-2xl"
+                className="mx-auto rounded-t-2xl"
               />
               <CardContent className="p-6 text-lg font-medium text-gray-100">{service.name}</CardContent>
             </Card>
@@ -69,29 +68,28 @@ export default function MercedesSuspensionLanding() {
         <Image 
           src="/images/workshop.jpg" 
           alt="Servisas" 
-		  layout="intrinsic"
           width={550} 
           height={412} 
           className="diagnostics.jpg rounded-2xl mb-6"
         />
         <p className="mb-6 text-gray-400">UAB „Pašilės Servisas“ | MERCEDES-BENZ</p>
         <p className="mb-6 text-gray-400">
-			<a 
-				href="https://www.google.com/maps?q=Pašilės+g.+104,+Kaunas" 
-				target="_blank" 
-				className="text-blue-400 hover:underline"
-			>
-				Pašilės g. 104, Kaunas
-			</a>
-		</p>
+          <a 
+            href="https://www.google.com/maps?q=Pašilės+g.+104,+Kaunas" 
+            target="_blank" 
+            className="text-blue-400 hover:underline"
+          >
+            Pašilės g. 104, Kaunas
+          </a>
+        </p>
         <p className="mb-6 text-gray-400">
-			<a href="tel:+37068750288" className="text-blue-400 hover:underline">Telefonas: +370 68750288</a>
-		</p>
-  
-		{/* El. paštas, kuris yra aktyvi nuoroda */}
-		<p className="mb-6 text-gray-400">
-			<a href="mailto:lazaitis@yahoo.com" className="text-blue-400 hover:underline">lazaitis@yahoo.com</a>
-		</p>
+          <a href="tel:+37068750288" className="text-blue-400 hover:underline">Telefonas: +370 68750288</a>
+        </p>
+
+        {/* El. paštas, kuris yra aktyvi nuoroda */}
+        <p className="mb-6 text-gray-400">
+          <a href="mailto:lazaitis@yahoo.com" className="text-blue-400 hover:underline">lazaitis@yahoo.com</a>
+        </p>
         <p className="mb-6 text-gray-400">www.mercedesvaziuoklesremontas.lt</p>
         <p className="mb-6 text-gray-400">Darbo valandos: I-IV 09:00–17:00 | V 09:00–13:00</p>
         <p className="mb-6 text-gray-400">VI-VII Nedirbame | Pietų pertrauka: 13:00-14:00</p>
