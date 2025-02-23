@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from 'next/image'; // Importuojame `next/image` komponentą
 
-export default function MercedesSuspensionLanding() {
+function MercedesSuspensionLanding() { // Named function component for better identification
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Hero Section */}
@@ -65,13 +65,18 @@ export default function MercedesSuspensionLanding() {
       {/* Contact Section */}
       <section className="py-12 px-4 bg-gradient-to-r from-gray-900 to-black text-center">
         <h2 className="text-3xl font-semibold mb-4 text-white">Susisiekite su mumis</h2>
-        <Image 
-          src="/images/workshop.jpg" 
-          alt="Servisas" 
-          width={550} 
-          height={412} 
-          className="diagnostics.jpg rounded-2xl mb-6"
-        />
+        
+        {/* Centering the Image */}
+        <div className="flex justify-center mb-6">
+          <Image 
+            src="/images/workshop.jpg" 
+            alt="Servisas" 
+            width={550} 
+            height={412} 
+            className="rounded-2xl" // Removed unnecessary class
+          />
+        </div>
+
         <p className="mb-6 text-gray-400">UAB „Pašilės Servisas“ | MERCEDES-BENZ</p>
         <p className="mb-6 text-gray-400">
           <a 
@@ -102,3 +107,5 @@ export default function MercedesSuspensionLanding() {
     </div>
   );
 }
+
+export default MercedesSuspensionLanding; // Export the component properly
