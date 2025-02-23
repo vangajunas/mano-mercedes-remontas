@@ -1,0 +1,25 @@
+/* Pridėti Tailwind CSS sluoksnius */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pritaikykite savo pritaikytus stilius */
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  /* Sukurkite bendrą stilių kortelėms */
+  .card {
+    @apply bg-white shadow-lg rounded-lg p-6;
+  }
+}
+
+@layer utilities {
+  /* Naudojant @apply galite sukurti naujas, pagal jūsų poreikius pritaikytas naudingas klases */
+  .text-xxl {
+    font-size: 2rem;
+  }
+}
