@@ -37,9 +37,9 @@ export default function MercedesSuspensionLanding() {
         <h2 className="text-3xl font-semibold text-center mb-8 text-white">Mūsų paslaugos</h2>
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {[ 
-            { name: "Amortizatorių keitimas", image: "/images/shock-absorber.jpg" },
-            { name: "Pneumatinių pagalvių keitimas", image: "/images/airbag-replacement.jpg" },
-            { name: "Vairo kolonėlės nuėmimas, uždėjimas, keitimas", image: "/images/steering-column.jpg" },
+            { name: "Pneumatinių pagalvių keitimas", image: "/images/shock-absorber.jpg" },
+            { name: "Vairo kolonėlės nuėmimas, uždėjimas, keitimas", image: "/images/airbag-replacement.jpg" },
+            { name: "Tepalų / filtrų keitimas", image: "/images/steering-column.jpg" },
             { name: "Pusašių keitimas, diagnozavimas", image: "/images/axle-repair.jpg" }
           ].map((service, index) => (
             <Card key={index} className="shadow-md rounded-2xl bg-gray-800 border border-gray-600 text-center">
