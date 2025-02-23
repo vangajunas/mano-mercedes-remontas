@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from 'next/image'; // Importuojame `next/image` komponentą
 
-function MercedesSuspensionLanding() { // Named function component for better identification
+function MercedesSuspensionLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       {/* Hero Section */}
@@ -73,7 +73,7 @@ function MercedesSuspensionLanding() { // Named function component for better id
             alt="Servisas" 
             width={550} 
             height={412} 
-            className="rounded-2xl" // Removed unnecessary class
+            className="rounded-2xl"
           />
         </div>
 
@@ -108,4 +108,4 @@ function MercedesSuspensionLanding() { // Named function component for better id
   );
 }
 
-export default MercedesSuspensionLanding; // Export the component properly
+export default MercedesSuspensionLanding;
