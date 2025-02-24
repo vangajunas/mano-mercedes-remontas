@@ -7,14 +7,19 @@ function MercedesSuspensionLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       <Head>
-        {/* Favicon */}
+
+
+        <!-- Tradicinis favicon -->
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   
-        {/* Didesni favicon dydžiai (Apple ir Android įrenginiams) */}
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <!-- PNG piktogramos, naudojamos įvairiuose įrenginiuose -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   
+        <!-- Web App manifestas -->
+        <link rel="manifest" href="/site.webmanifest">
+
+
         <title>Mercedes Benz Važiuoklės Remontas | Pakabos, Vairo, Pusašių Keitimas Kaune</title>
         <meta 
           name="description" 
