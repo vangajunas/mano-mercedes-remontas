@@ -7,6 +7,7 @@ function MercedesSuspensionLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       <Head>
+<<<<<<< HEAD
 
 
         <!-- Tradicinis favicon -->
@@ -20,6 +21,8 @@ function MercedesSuspensionLanding() {
         <link rel="manifest" href="/site.webmanifest">
 
 
+=======
+>>>>>>> parent of de6a612 (favicon)
         <title>Mercedes Benz Važiuoklės Remontas | Pakabos, Vairo, Pusašių Keitimas Kaune</title>
         <meta 
           name="description" 
@@ -31,7 +34,7 @@ function MercedesSuspensionLanding() {
         />
         <meta property="og:title" content="Mercedes Benz Važiuoklės Remontas | Pakabos, Vairo, Pusašių Keitimas Kaune" />
         <meta property="og:description" content="Profesionalus Mercedes Benz pakabos remontas Kaune. Siūlome pakabos, pneumatinių pagalvių, pusašių keitimo paslaugas." />
-        <meta property="og:image" content="https://www.mercedesvaziuoklesremontas.lt/images/og-image.jpg" />
+        <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mercedesvaziuoklesremontas.lt" />
       </Head>
