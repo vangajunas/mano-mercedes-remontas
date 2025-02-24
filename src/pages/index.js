@@ -1,27 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from 'next/image'; // Importuojame `next/image` komponentą
+import Head from 'next/head';
 
 function MercedesSuspensionLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+      <Head>
+        <title>Mercedes Benz Važiuoklės Remontas | Pakabos, Vairo, Pusašių Keitimas Kaune</title>
+        <meta 
+          name="description" 
+          content="Mercedes Benz pakabos remontas Kaune. Profesionalus pakabos, pneumatinių pagalvių, pusašių keitimas. Kokybiškos paslaugos pagal Air Matic® sistemą." 
+        />
+        <meta 
+          name="keywords"
+          content="Mercedes Benz Važiuoklės remontas, Pakabos remontas Kaune, Pneumatinės važiuoklės remontas, Air Matic® pakabos remontas, Mercedes Benz remonto paslaugos Kaune"
+        />
+        <meta property="og:title" content="Mercedes Benz Važiuoklės Remontas | Pakabos, Vairo, Pusašių Keitimas Kaune" />
+        <meta property="og:description" content="Profesionalus Mercedes Benz pakabos remontas Kaune. Siūlome pakabos, pneumatinių pagalvių, pusašių keitimo paslaugas." />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mercedesvaziuoklesremontas.lt" />
+      </Head>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-black to-gray-800 text-white text-center py-16 px-4 relative">
         <Image 
-          src="/images/workshop.jpg" // Nurodykite kelią į nuotrauką
+          src="/images/workshop.jpg" 
           alt="Mercedes Benz" 
-          width={1920} // Nustatykite norimą nuotraukos plotį
-          height={1080} // Nustatykite norimą nuotraukos aukštį
-          style={{ objectFit: 'cover' }} // Nustatykite objectFit tiesiogiai
-          className="absolute inset-0 w-full h-full opacity-20" // Apibrėžti stilius
+          width={1920} 
+          height={1080} 
+          style={{ objectFit: 'cover' }} 
+          className="absolute inset-0 w-full h-full opacity-20" 
         />
         <h1 className="text-4xl font-bold mb-4 relative">Mercedes - Benz Važiuoklės remontas</h1>
         <p className="text-xl mb-6 relative">Pakabos remontas Air Matic® | Pneumatinės/orinės važiuoklės remontas</p>
         <Button 
           className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-2xl text-lg relative"
-          onClick={() => window.location.href = 'tel:+37068750288'} // Nurodykite telefono numerį su + ir šalies kodu
+          onClick={() => window.location.href = 'tel:+37068750288'} 
         >         
-          Registruotis diagnostikai
+          Registruotis važiuoklės patikrai
         </Button>
       </section>
 
@@ -30,8 +48,8 @@ function MercedesSuspensionLanding() {
         <Image 
           src="/images/diagnostics.jpg"
           alt="Diagnostika"
-          width={700} // Nustatykite norimą nuotraukos plotį
-          height={400} // Nustatykite norimą nuotraukos aukštį
+          width={700}
+          height={400}
           className="mx-auto rounded-2xl mb-6"
         />
         <h2 className="text-3xl font-semibold mb-4 text-gray-200">Profesionali važiuoklės patikra</h2>
@@ -52,8 +70,8 @@ function MercedesSuspensionLanding() {
               <Image 
                 src={service.image}
                 alt={service.name}
-                width={400} // Nustatykite plotį
-                height={240} // Nustatykite aukštį
+                width={400}
+                height={240}
                 className="mx-auto rounded-t-2xl"
               />
               <CardContent className="p-6 text-lg font-medium text-gray-100">{service.name}</CardContent>
