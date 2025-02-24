@@ -7,14 +7,22 @@ function MercedesSuspensionLanding() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
       <Head>
-        {/* Favicon */}
+<<<<<<< HEAD
+
+
+        <!-- Tradicinis favicon -->
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   
-        {/* Didesni favicon dydžiai (Apple ir Android įrenginiams) */}
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <!-- PNG piktogramos, naudojamos įvairiuose įrenginiuose -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   
+        <!-- Web App manifestas -->
+        <link rel="manifest" href="/site.webmanifest">
+
+
+=======
+>>>>>>> parent of de6a612 (favicon)
         <title>Mercedes Benz Važiuoklės Remontas | Pakabos, Vairo, Pusašių Keitimas Kaune</title>
         <meta 
           name="description" 
@@ -26,7 +34,7 @@ function MercedesSuspensionLanding() {
         />
         <meta property="og:title" content="Mercedes Benz Važiuoklės Remontas | Pakabos, Vairo, Pusašių Keitimas Kaune" />
         <meta property="og:description" content="Profesionalus Mercedes Benz pakabos remontas Kaune. Siūlome pakabos, pneumatinių pagalvių, pusašių keitimo paslaugas." />
-        <meta property="og:image" content="https://www.mercedesvaziuoklesremontas.lt/images/og-image.jpg" />
+        <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mercedesvaziuoklesremontas.lt" />
       </Head>
